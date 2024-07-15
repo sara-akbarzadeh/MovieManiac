@@ -4,7 +4,11 @@ import Star from "../../assets/star.png";
 
 const MovieCard = ({ movie }) => {
   return (
-    <a href="" className="movie_card">
+    <a
+      href={`https://www.themoviedb.org/movie/${movie.id}`}
+      target="_blank"
+      className="movie_card"
+    >
       <img
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
         alt="movie poster"
@@ -15,7 +19,7 @@ const MovieCard = ({ movie }) => {
         <div className="align_center movie_date_rate">
           <p>{movie.release_date}</p>
           <p>
-            {movie.rate_average}
+            {movie.vote_average}
             <img src={Star} alt="rating icon" className="card_emoji" />
           </p>
         </div>
