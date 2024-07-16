@@ -11,3 +11,4 @@ A React app to explore popular, top-rated, and upcoming movies with filtering an
 
 ## API
 This application uses the The Movie Database (TMDb) API to fetch movie data. You need an API key to access the movie data.
+
