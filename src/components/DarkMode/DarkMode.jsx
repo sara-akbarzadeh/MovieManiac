@@ -29,6 +29,7 @@ const DarkMode = () => {
       setLightTheme();
     }
   };
+
   return (
     <div className="dark_mode">
       <input
@@ -36,7 +37,7 @@ const DarkMode = () => {
         type="checkbox"
         id="darkmode-toggle"
         onChange={toggleTheme}
-        defaultChecked={truex}
+        defaultChecked={true}
       />
       <label className="dark_mode_label" htmlFor="darkmode-toggle">
         <Sun />
